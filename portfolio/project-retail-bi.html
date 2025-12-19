@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retail BI Dashboard — Selma Baibou</title>
+    <meta name="description"
+        content="Projet BI Retail : Power BI dashboard, KPI direction, omnicanal, produits, clients & géographie." />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header class="container header">
+        <div class="brand">
+            <a class="logo" href="index.html" aria-label="Retour">SB</a>
+            <div>
+                <h1>Retail BI Dashboard</h1>
+                <p class="muted">Power BI · KPI Direction · Omnicanal · Produits · Clients & Géographie</p>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="#kpis">KPI</a>
+            <a href="#pages">Pages</a>
+            <a href="#insights">Insights</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <div class="card">
+                <div class="two-col">
+                    <div>
+                        <h2 class="h2">Résumé</h2>
+                        <p class="muted">
+                            Projet personnel de Business Intelligence simulant le pilotage de la performance
+                            d’un distributeur retail : modèle en étoile, DAX, KPI book et dashboard multipages.
+                        </p>
+
+                        <div class="chips">
+                            <span class="chip">Power BI Desktop</span>
+                            <span class="chip">Power BI Service</span>
+                            <span class="chip">DAX</span>
+                            <span class="chip">Star Schema</span>
+                        </div>
+
+                        <div class="mini-list">
+                            <div><strong>Objectif :</strong> suivre CA, croissance, mix canal, produits & clients</div>
+                            <div><strong>Livrable :</strong> dashboard 5 pages + recommandations business</div>
+                            <div><strong>Accès :</strong>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZjhkZDI2ZDMtYWEyZS00NmQyLWE4NjYtZGVkNWE4ODMwNDBhIiwidCI6ImEzNzg2MWRiLTY5NWEtNDNiZi05ZTI5LTUxNzlhMDU1ODA1YiIsImMiOjl9"
+                                    target="_blank" class="link">Lien Power BI</a>
+                                /
+                                <a href="https://github.com/selmabayb/bi-retail-omnicanal" target="_blank"
+                                    class="link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="callout">
+                        <div class="callout-title">Outils</div>
+                        <ul class="muted">
+                            <li>Modèle en étoile (fact_sales + dimensions)</li>
+                            <li>DAX : CA, YoY, YTD, Part Online, Panier moyen</li>
+                            <li>Filtres : année, canal, catégorie, région, magasin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kpis" class="section">
+            <div class="section-head">
+                <h3>KPI suivis</h3>
+                <p class="muted">Indicateurs direction & performance opérationnelle.</p>
+            </div>
+
+            <div class="grid kpi-book">
+                <div class="card">
+                    <div class="kpi">
+                        <div class="kpi-value">€ 4,87M</div>
+                        <div class="kpi-label">Chiffre d’Affaires</div>
+                    </div>
+                    <p class="muted">Somme du CA net, filtrable (année/canal/région/catégorie).</p>
+                </div>
+
+                <div class="card">
+                    <div class="kpi">
+                        <div class="kpi-value">35,32%</div>
+                        <div class="kpi-label">Croissance YoY</div>
+                    </div>
+                    <p class="muted">Variation vs année précédente (YoY).</p>
+                </div>
+
+                <div class="card">
+                    <div class="kpi">
+                        <div class="kpi-value">42,87%</div>
+                        <div class="kpi-label">Part Online</div>
+                    </div>
+                    <p class="muted">Mix canal : CA Online / CA Total.</p>
+                </div>
+
+                <div class="card">
+                    <div class="kpi">
+                        <div class="kpi-value">€ 97,40</div>
+                        <div class="kpi-label">Panier moyen</div>
+                    </div>
+                    <p class="muted">CA / nombre de commandes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="interactive" class="section">
+            <div class="section-head">
+                <h3>Rapport Interactif</h3>
+                <p class="muted">Naviguez dans les données en temps réel.</p>
+            </div>
+            <div class="card" style="padding: 0; overflow: hidden;">
+                <iframe title="analyseretail" width="100%" height="600"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiZjhkZDI2ZDMtYWEyZS00NmQyLWE4NjYtZGVkNWE4ODMwNDBhIiwidCI6ImEzNzg2MWRiLTY5NWEtNDNiZi05ZTI5LTUxNzlhMDU1ODA1YiIsImMiOjl9"
+                    frameborder="0" allowFullScreen="true" style="display: block;"></iframe>
+            </div>
+        </section>
+
+        <section id="pages" class="section">
+            <div class="section-head">
+                <h3>Aperçu du dashboard</h3>
+                <p class="muted">Clique sur une image pour l’ouvrir en grand.</p>
+            </div>
+
+            <div class="gallery">
+                <a class="shot" href="assets/img/retailbi_page1.png" target="_blank" rel="noopener">
+                    <img src="assets/img/retailbi_page1.png" alt="Page 1 — Executive Overview" />
+                    <div class="shot-cap">Page 1 — Executive Overview</div>
+                </a>
+
+                <a class="shot" href="assets/img/retailbi_page2.png" target="_blank" rel="noopener">
+                    <img src="assets/img/retailbi_page2.png" alt="Page 2 — Channel & Omnichannel" />
+                    <div class="shot-cap">Page 2 — Channel & Omnichannel</div>
+                </a>
+
+                <a class="shot" href="assets/img/retailbi_page3.png" target="_blank" rel="noopener">
+                    <img src="assets/img/retailbi_page3.png" alt="Page 3 — Produits & Performance" />
+                    <div class="shot-cap">Page 3 — Produits & Performance</div>
+                </a>
+
+                <a class="shot" href="assets/img/retailbi_page4.png" target="_blank" rel="noopener">
+                    <img src="assets/img/retailbi_page4.png" alt="Page 4 — Clients & Géographie" />
+                    <div class="shot-cap">Page 4 — Clients & Géographie</div>
+                </a>
+
+                <a class="shot" href="assets/img/retailbi_page5.png" target="_blank" rel="noopener">
+                    <img src="assets/img/retailbi_page5.png" alt="Page 5 — Business Insights" />
+                    <div class="shot-cap">Page 5 — Business Insights</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="insights" class="section">
+            <div class="section-head">
+                <h3>Insights & recommandations</h3>
+            </div>
+
+            <div class="card">
+                <h4>Insights clés</h4>
+                <ul class="muted">
+                    <li>Le CA baisse en 2024 malgré une hausse continue de la part online.</li>
+                    <li>Les ventes en magasin restent dominantes mais déclinent plus vite que le online.</li>
+                    <li>Quelques régions concentrent la majorité du chiffre d’affaires.</li>
+                    <li>Le panier moyen est plus élevé en magasin que online.</li>
+                </ul>
+
+                <h4>Recommandations business</h4>
+                <ul class="muted">
+                    <li>Accélérer l’investissement sur le canal online (croissance continue).</li>
+                    <li>Renforcer la fidélisation (limiter la baisse de clients actifs).</li>
+                    <li>Optimiser le réseau magasins dans les zones moins performantes.</li>
+                    <li>Campagnes ciblées sur catégories à forte marge.</li>
+                </ul>
+
+                <div class="note muted">
+                    💡 <a
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZjhkZDI2ZDMtYWEyZS00NmQyLWE4NjYtZGVkNWE4ODMwNDBhIiwidCI6ImEzNzg2MWRiLTY5NWEtNDNiZi05ZTI5LTUxNzlhMDU1ODA1YiIsImMiOjl9"
+                        target="_blank" class="link">Ouvrir le rapport interactif Power BI</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container footer">
+        <a class="link" href="index.html">← Retour accueil</a>
+        <span class="muted">© <span id="y"></span> Selma Baibou</span>
+    </footer>
+
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
